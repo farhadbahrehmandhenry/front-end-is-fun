@@ -1,0 +1,24 @@
+#calculator-container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+#result {
+  height: 100px;
+}
+
+#result > div {
+  height: 50px;
+  width: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 15rem;
+  height: 3rem;
+}

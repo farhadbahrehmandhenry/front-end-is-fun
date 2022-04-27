@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+  <form action="" id="calculator-container" onsubmit="return false;">
+    <label for="amount">How Much?</label>
+    <input id="amount" type="number" placeholder="Bill Amount">
+    <label for="tip">Tip:</label>
+    <select id="tip">
+      <option value="5">5%</option>
+      <option value="10">10%</option>
+      <option value="15">15%</option>
+      <option value="20">20%</option>
+      <option value="30">30%</option>
+    </select>
+    <label for="group">How Many People</label>
+    <input type="number" id="group" placeholder="Number of People">
+    <button id="submit">Calculate</button>
+    <div id="result"></div>
+  </form>
+  <div class="container"></div>
+  <script src="./calculator.js"></script>
+</body>
+</html>
