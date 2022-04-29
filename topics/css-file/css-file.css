@@ -1,0 +1,212 @@
+/* @mixin mixin-example {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+.selector {
+  @include mixin-example
+} */
+
+body {
+  height: 100vh;
+}
+
+/* h4 {
+  text-transform: uppercase;
+} */
+
+.css-container {
+  height: 100%;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.css-container > * {
+  border-bottom: 1px solid black;
+  min-height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transform-property {
+  justify-content: space-around;
+}
+
+.transform-property > * , .transition, .animation-one, .animation-two, .tooltips, .position-static, .position-relative,
+.position-fixed, .position-absolute, .position-sticky, .position-practice-absolute, .position-practice-relative {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: red;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.transform-scale {
+  transform: scaleY(2);
+}
+
+.transform-skew {
+  transform: skew(20deg);
+}
+
+.transform-rotate {
+  transform: rotate(45deg);
+}
+
+.transform-translate {
+  transform: translate(100px, 50px);
+}
+
+.transition-property {
+
+}
+
+.transition {
+  transition: height 2s;
+}
+
+.transition:hover {
+  transform: scaleX(3);
+  height: 100px;
+  cursor: pointer;
+}
+
+.animation-property {
+
+}
+
+.animation-one:hover {
+  animation-name: animation1;
+  animation-duration: 3s;
+  cursor: pointer;
+}
+
+.animation-two:hover {
+  animation-name: animation2;
+  animation-duration: 3s;
+  cursor: pointer;
+}
+
+@keyframes animation1 {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+@keyframes animation2 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+.tooltips-container {
+
+}
+
+.tooltips {
+  display: inline-block;
+  position: relative;
+}
+
+.tooltips-text {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  position: absolute;
+  padding: 1rem;
+}
+
+.tooltips:hover {
+  cursor: pointer;
+}
+
+.tooltips:hover .tooltips-text {
+  visibility: visible;
+}
+
+.position-container {
+  position: relative;
+}
+
+.position-relative {
+  position: relative;
+  left: 1rem;
+}
+
+.position-fixed {
+  position: fixed;
+  bottom: 1rem;
+} 
+
+.position-absolute {
+  position: absolute;
+  left: 1rem;
+}
+
+.position-sticky {
+  position: sticky;
+  top: 2rem;
+}
+
+.position-practice {
+  position: relative;
+}
+
+.position-practice-relative {
+  position: relative;
+  left: 2rem;
+}
+
+.position-practice-absolute {
+  position: absolute;
+  left: 1rem;
+}
+
+.media-query {
+  background-color: red;
+}
+
+/* less than 600 will be blue */
+@media screen and (max-width: 600px) {
+  .media-query {
+    background-color: blue;
+  }
+}
+
+/* above 300 will be yellow */
+@media screen and (min-width: 300px) { 
+  .media-query {
+    background-color: yellow;
+  }
+}
+
+.media-query {
+
+}
+
+.float-container p {
+  width: 50%;
+}
+
+.float-span {
+  float: left;
+  font-size: 2rem;
+}

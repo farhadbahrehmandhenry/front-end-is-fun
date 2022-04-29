@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IIFE</title>
+  </head>
+  <body>
+    <h3>IIFE (call script1.showMessage or script2.showMessage to test the iife)</h3>
+    <div class='script-one-container'>
+      <h5 class="script-one-message"></h5>
+    </div>
+    <div class='script-two-container'>
+      <h5 class="script-two-message"></h5>
+    </div>
+    <script>
+      var script1 = (function() {
+        var message = 'this is from script 1';
+        // call this function in developer tool like script1.showMessage()
+        var showMessage = () => {
+          document.querySelector('.script-one-message').innerHTML = message;
+        }
+
+        return {
+          showMessage: showMessage
+        }
+      })()
+    </script>
+    <script>
+      var script2 = (function() {
+        var message = 'this is from script 2';
+
+        var showMessage = () => {
+          document.querySelector('.script-two-message').innerHTML = message;
+        }
+
+        return {
+          showMessage: showMessage
+        }
+      })()
+    </script>
+  </body>
+</html>
