@@ -1,0 +1,2 @@
+- What are some ways you may improve your website's scrolling performance?
+- Explain the difference between layout, painting and compositing.

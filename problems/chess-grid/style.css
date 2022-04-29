@@ -1,15 +1,3 @@
-/* properties =>
-1- display: grid
-2- grid-template-columns: 
-3- grid-gap:
-4- grid-auto-rows:
-5- justify-items:
-6- align-items:
-7- justify-self:
-8- align-self:
-9- grid-column:
-10- grid-row: */
-
 body {
   height: 100vh;
   width: 100vw;

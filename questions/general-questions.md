@@ -1,0 +1,12 @@
+- Can you describe some SEO best practices or techniques you have used lately?
+- Can you describe the difference between progressive enhancement and graceful degradation?
+- How would you optimize a website's assets/resources?
+- How many resources will a browser download from a given domain at a time?
+  - What are the exceptions?
+- Name 3 ways to decrease page load (perceived or actual load time).
+- Explain the importance of standards and standards bodies.
+- What is Flash of Unstyled Content? How do you avoid FOUC?
+- Explain what ARIA and screenreaders are, and how to make a website accessible.
+- Explain some of the pros and cons for CSS animations versus JavaScript animations.
+- What does CORS stand for and what issue does it address?
+- Explain the difference between cookies, session storage, and local storage?

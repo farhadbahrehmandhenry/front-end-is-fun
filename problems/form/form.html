@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form</title>
+  </head>
+  <body>
+    <div class="for-container">
+      <!-- method="POST" action="./contact.html"-->
+      <form onsubmit="" action="http://www.google.com" >
+        <fieldset>
+          <legend>my form</legend>
+          <label for="first-name">First Name</label>
+          <input id="first-name" type="text">
+          <label for="last-name">First Name</label>
+          <input id="last-name" type="text">
+          male: <input type="radio" name="gender" value="male">
+          female: <input type="radio" name="gender" value="female">
+          <textarea name="message"></textarea>
+          <select name="car">
+            <option value="car0">none</option>
+            <option value="car1">ford</option>
+            <option value="car2">benz</option>
+          </select>
+          <input type="checkbox" id="married">
+          <input type="range" name="range" min="0" max="100">
+          <input type="date" name="date">
+          <input type="color" name="color">
+          <progress value="20" max="100"></progress>
+          <input type="submit">
+          <button type="submit" name="submit">submit</button>
+        </fieldset>
+      </form>
+      <script>
+        var submitForm = () => {
+          alert('submitted')
+        }
+      </script>
+    </div>
+  </body>
+</html>

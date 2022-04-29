@@ -1,0 +1,21 @@
+- What is CSS selector specificity and how does it work?
+- What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
+- Describe Floats and how they work.
+- Describe BFC (Block Formatting Context) and how it works.
+- What are the various clearing techniques and which is appropriate for what context?
+- How would you approach fixing browser-specific styling issues?
+- How do you serve your pages for feature-constrained browsers?
+  - What techniques/processes do you use?
+- What are the advantages/disadvantages of using CSS preprocessors?
+  - Describe what you like and dislike about the CSS preprocessors you have used.
+- How would you implement a web design comp that uses non-standard fonts?
+- Explain how a browser determines what elements match a CSS selector.
+- Describe pseudo-elements and discuss what they are used for.
+- What's the difference between inline and inline-block?
+- What's the difference between the "nth-of-type()" and "nth-child()" selectors?
+- What's the difference between a relative, fixed, absolute and statically positioned element?
+- Can you explain the difference between coding a web site to be responsive versus using a mobile-first strategy?
+- Have you ever worked with retina graphics? If so, when and what techniques did you use?
+- How is clearfix css property useful?
+- Can you give an example of a pseudo class? Can you provide an example use case for a pseudo class?
+- What is the difference between CSS Grid and Flexbox? When would you use one over the other?
