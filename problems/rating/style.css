@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star {
+  margin-left: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.star.active {
+  background-color: yellow;
+}
