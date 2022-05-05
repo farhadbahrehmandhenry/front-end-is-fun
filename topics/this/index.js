@@ -124,7 +124,7 @@ multiplyToTen(3); // 30
 
 console.log("---------------- currying")
 // 7- "currying" is when we parse a finction to multiple functions and each function return 
-// something differenrt to above function
+// something differenrt to above function - nested functions
 
 function first(a, b, c) {
   console.log(a*b*c);
@@ -141,3 +141,56 @@ function curry(a) {
 }
 
 curry(2)(3)(4); // 24
+
+
+ 
+const a = function(x) {
+  this.x = x;
+  this.getX = () => console.log(this.x);
+ }
+  
+ const b = function(y, x) {
+  this.y = y;
+  a.call(this, x);
+  
+  this.getY = () => console.log(this.y);
+ }
+ const newB = new b('y', 'x');
+  
+ newB.getX();
+ newB.getY();
+ var x = {
+  a: 1,
+  getA() {
+    const inner = function() {
+      console.log(this.a);
+    }
+  
+    inner.bind(this)();
+  }
+ }
+  
+ var x = {
+  a: 1,
+  getA() {
+    const inner = () => {
+      console.log(this.a);
+    }
+  
+    inner.bind(this)();
+  }
+ }
+  
+ var x = {
+  a: 1,
+  getA() {
+    const self = this;
+    const inner = () => {
+      console.log(self.a);
+    }
+  
+    inner.bind();
+  }
+ }
+  
+ x.getA();

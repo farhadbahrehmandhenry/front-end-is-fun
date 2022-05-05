@@ -7,3 +7,4 @@
 // Having a table on the front end, how would you sort the names in the table? How would you filter that information?
 // Memoization, implement toDoList, CSS specificity.
 // When it is a good time not use "use strict" in JavaScript!
+
