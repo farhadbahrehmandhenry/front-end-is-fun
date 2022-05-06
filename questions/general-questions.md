@@ -68,3 +68,6 @@ Follow same-origin policy =>for example when you visit a website you actually se
 Sdlc => analysis - plan - design - implement - test - maintain
 
 Scrum => one type of agile methodology that has sprints usually each two weeks - for projects that have less clear requirements
+
+how I work under pressure - plan - break down - tackle
+My working style - have a to do list to keep track of what I need to do - might be a daily or weekly or monthly
